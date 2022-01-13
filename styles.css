@@ -20,7 +20,9 @@ main {
 
 h1 {
     font-family: 'Oswald', 'Arial', sans-serif;
-    font-size: 4em;
+    font-size: 5em;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 1em;
 }
 
 p {
@@ -35,4 +37,8 @@ img {
     width: 50vw;
     height: 50vw;
     object-fit: cover;
+}
+
+figcaption p {
+    font-size: 1.5em;
 }
