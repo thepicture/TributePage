@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    overflow-wrap: break-word;
 }
 
 body {
@@ -23,6 +24,9 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 5em;
     border-bottom: 1px solid gainsboro;
     padding-bottom: 1em;
+    background: linear-gradient(45deg, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -36,12 +40,27 @@ p {
     padding: 2em 0;
 }
 
+figure {
+    padding: 2em;
+    background-color: white;
+    box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 50%);
+    margin-bottom: 2em;
+}
+
+figure > div {
+    margin: auto;
+    width: 50vw;
+    height: 50vw;
+    max-width: 400px;
+    max-height: 400px;
+}
+
 img {
     border-radius: 50%;
     box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 50%);
-    width: 50vw;
-    height: 50vw;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 figcaption p {
