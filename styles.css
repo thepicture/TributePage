@@ -85,28 +85,24 @@ ul p {
     padding-bottom: 0;
 }
 
-@media screen and (max-width: 500px) {
-    main {
-        left: 0;
-        top: 0;
-        right: 0;
-    }
-
-    ul {
-        width: 80%;
-    }
-}
-
 .quote {
     background-color: white;
     box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 50%);
     margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    position: relative;
 }
 
 .quote__author {
     text-align: right;
     margin-right: 2em;
     font-size: 1.5em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 a {
@@ -117,4 +113,27 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+
+@media screen and (max-width: 500px) {
+    main {
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+
+    ul {
+        width: 80%;
+    }
+
+    .quote {
+        flex-direction: column;
+        position: unset;
+        height: auto;
+    }
+
+    .quote__author {
+        position: unset;
+    }
 }
